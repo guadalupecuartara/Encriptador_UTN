@@ -1,6 +1,6 @@
 services:
   postgresql:
-    container_name: postgresql1
+    container_name: postgresql
     image: postgres:15.4-bullseye
     restart: always
 
@@ -19,7 +19,7 @@ services:
       - mired
 
   pg-admin:
-    container_name: pgadmin4_container1
+    container_name: pgadmin4_container
     image: dpage/pgadmin4:8
     restart: always
 
